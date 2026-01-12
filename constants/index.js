@@ -10,11 +10,10 @@ module.exports = {
     PLAT_FORM_NAME: 'API'
   },
   ENV: {
-    PORT: '8083',
+    PORT: '8085',
     ENVIROMNENT: 'production',
     URL: 'http://localhost',
-    timeURL: 'https://www.timeapi.io/api/Time/current/zone?timeZone=Asia/Kolkata',
-    APIURL:'http://localhost:8003/api/billing',
+    timeURL: 'https://www.timeapi.io/api/Time/current/zone?timeZone=Asia/Kolkata'
   },
   
 };
