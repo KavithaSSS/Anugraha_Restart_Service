@@ -1,0 +1,56 @@
+{
+  "name": "trio-pos",
+  "productName": "Trios Retail-POS - 1.0.0",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "migrate": "node-pg-migrate up",
+    "migrate:down": "node-pg-migrate down",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.(js)": [
+      "eslint --fix "
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@eslint/js": "^9.39.1",
+    "@serialport/parser-readline": "^13.0.0",
+    "axios": "^1.13.2",
+    "body-parser": "^2.2.1",
+    "cookie": "^1.1.1",
+    "cookie-parser": "^1.4.7",
+    "cookie-session": "^2.1.1",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "helmet": "^8.1.0",
+    "node-cron": "^4.2.1",
+    "path": "^0.12.7",
+    "pdf-to-printer": "^5.6.1",
+    "pdfkit": "^0.17.2",
+    "pg": "^8.16.3",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "dotenv": "^17.2.3",
+    "electron": "^39.2.4",
+    "electron-builder": "^26.0.12",
+    "electron-packager": "^17.1.2",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.5.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "node-pg-migrate": "^8.0.3",
+    "nodemon": "^3.1.11"
+  },
+  "keywords": [],
+  "description": ""
+}
